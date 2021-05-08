@@ -58,8 +58,9 @@ module.exports = {
       entry:'src/examples/main.js'
     }
   },
+  parallel: false,
   chainWebpack: config => {
-    console.log(config)
+    // console.log(config)
     config.module.rule('md')
       .test(/\.md/)
       .use('vue-loader')
